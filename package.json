@@ -2,23 +2,22 @@
   "name": "@mikro-orm/reproduction",
   "private": true,
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "vitest run",
-    "test": "vitest run",
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
     "typecheck": "tsc --noEmit"
   },
   "author": "Martin Adamek",
   "license": "MIT",
   "dependencies": {
-    "@mikro-orm/core": "next",
-    "@mikro-orm/decorators": "next",
-    "@mikro-orm/sqlite": "next",
-    "reflect-metadata": "^0.2.2"
+    "@electric-sql/pglite": "0.5.1",
+    "@mikro-orm/core": "7.1.4",
+    "@mikro-orm/pglite": "7.1.4"
   },
   "devDependencies": {
+    "@types/jest": "^29",
     "@types/node": "^25.5.0",
-    "typescript": "^5.8.0",
-    "vitest": "^4.1.0"
+    "jest": "30.4.2",
+    "ts-jest": "29.4.11",
+    "typescript": "^5.8.0"
   }
 }

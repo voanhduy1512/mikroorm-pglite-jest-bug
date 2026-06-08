@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
-    "module": "NodeNext",
+    "module": "CommonJS",
+    "moduleResolution": "node",
     "target": "ESNext",
     "strict": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "esModuleInterop": true,
-    "types": ["vitest/globals", "node"]
+    "types": ["jest", "node"]
   },
   "include": [
     "./src/**/*.ts"
